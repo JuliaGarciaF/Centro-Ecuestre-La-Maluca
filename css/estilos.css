@@ -389,21 +389,21 @@ footer { background-color: var(--bg-crema); padding: 60px 20px; border-top: 1px 
 /* =========================================
    9. RESPONSIVE
    ========================================= */
-@media (max-width: 768px) {
-    .main-nav { display: none; }
-    .header-container { flex-direction: column; gap: 15px; }
-    .form-grid { grid-template-columns: 1fr; }
-    .footer-container { grid-template-columns: 1fr; }
-    .galeria-grid-completa .galeria-item { height: 250px; }
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.main-nav ul');
 
-/* Estructura del contenedor */
-.galeria-grid-completa {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Rejilla responsive */
-    gap: 20px; /* Espacio entre fotos */
-    padding: 20px 0;
-}
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Cerrar el menú automáticamente al hacer clic en un enlace
+    document.querySelectorAll('.main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+});
 
 /* Estilo de cada ítem de la galería */
 .galeria-item {
