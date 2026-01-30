@@ -427,3 +427,77 @@ document.addEventListener('DOMContentLoaded', () => {
 .galeria-item img:hover {
     transform: scale(1.05);
 }
+
+   /* --- AJUSTES PARA MÓVILES (Pantallas menores a 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Contenedores generales: evitamos que nada se salga por los lados */
+    .container, .container-reserva, .header-container, .footer-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    /* 2. Navegación: El menú suele ser muy largo, lo ideal es que se apile o se oculte */
+    .main-nav ul {
+        display: none; /* Esto oculta el menú. Necesitarás un pelín de JS para el botón */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Clase que añadiremos con JS para mostrar el menú */
+    .main-nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostramos el botón de hamburguesa que ya tienes */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* 3. Hero: Ajustamos el tamaño del texto para que no ocupe toda la pantalla */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* 4. Grillas (Servicios y Formulario): De 2 columnas pasan a 1 */
+    .grid-servicios, .form-grid {
+        display: grid;
+        grid-template-columns: 1fr !important; /* Forzamos una sola columna */
+        gap: 20px;
+    }
+
+    .card-img-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 5. Formulario: Hacemos que los inputs ocupen todo el ancho */
+    .formulario-estilizado .form-group, 
+    .full-width {
+        width: 100%;
+    }
+
+    /* 6. Mapa: Ajustamos la altura para que no sea infinito en el móvil */
+    .map-container-estilizado iframe {
+        height: 300px;
+    }
+
+    /* 7. Footer: Las columnas se ponen una debajo de otra */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}
