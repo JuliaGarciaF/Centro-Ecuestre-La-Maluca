@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="doc_title">Hospedaje de Caballos | Centro ecuestre La Maluca</title>
+    
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("SwsiAPOVDlz5x3___");
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="header-container">
+        <div class="header-logo">
+            <img src="./img/logo.png" alt="Logo Finca" class="img-logo">
+            <span class="logo-text">La Maluca</span>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#inicio" data-key="nav_inicio">Inicio</a></li>
+                <li><a href="#quienes-somos" data-key="nav_sobre">Sobre nosotros</a></li>
+                <li><a href="galeria.html" data-key="nav_galeria">Galería</a></li>
+                <li><a href="#servicios" data-key="nav_alojamiento">Servicios</a></li>
+                <li><a href="#ubicacion" data-key="nav_contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="language-selector">
+            <div class="current-lang">
+                <img src="https://flagcdn.com/w20/es.png" id="lang-img-actual" alt="Español">
+                <span id="lang-text-actual">ES</span>
+                <span class="arrow">▼</span>
+            </div>
+            <ul class="lang-dropdown">
+                <li onclick="cambiarIdioma('es')"><img src="https://flagcdn.com/w20/es.png" alt="Español"> Español</li>
+                <li onclick="cambiarIdioma('en')"><img src="https://flagcdn.com/w20/gb.png" alt="English"> English</li>
+                <li onclick="cambiarIdioma('pt')"><img src="https://flagcdn.com/w20/pt.png" alt="Português"> Português</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1 data-key="hero_h1">Alojamiento de Primera Clase para su Caballo</h1>
+        <p data-key="hero_p">Seguridad, bienestar y descanso en un entorno natural único.</p>
+        <a href="#reservas" class="btn-main" data-key="hero_btn">Ver Disponibilidad</a>
+    </div>
+</section>
+
+<section id="quienes-somos" class="section-padding">
+    <div class="container">
+        <h2 data-key="qs_titulo">Quiénes Somos</h2>
+        <p data-key="qs_p">Nos dedicamos al cuidado minucioso de caballos en tránsito o estancias de descanso, ofreciendo boxes amplios y atención 24/7.</p>
+    </div>
+</section>
+
+<section id="servicios" class="section-padding bg-light">
+    <div class="container">
+        <h2 data-key="serv_titulo">Nuestros Servicios</h2>
+        <div class="grid-servicios">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="./img/20260107_193247.jpg" alt="Box Estándar" class="serv-img">
+                </div>
+                <h3 data-key="card1_h3">Box de Tránsito</h3>
+                <p data-key="card1_p">Ideal para paradas nocturnas. Incluye todo tipo de servicios.</p>
+                <p data-key="info_cont" class="info-footer">Para más información póngase en contacto</p>
+            </div>
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="./img/20260107_193534.jpg" alt="Paddock" class="serv-img">
+                </div>
+                <h3 data-key="card2_h3">Alquiler de Boxes</h3>
+                <p data-key="card2_p">Espacio al completo a todas las instalaciones (2 pistas, picadero cubierto, áreas de descanso).</p>
+                <p data-key="info_cont" class="info-footer">Para más información póngase en contacto</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ubicacion" class="section-mapa">
+    <div class="container-mapa-premium">
+        <div class="mapa-header">
+            <h1 data-key="mapa_h1">Un magnífico punto de descanso para tus caballos</h1>
+            <div class="divisor-dorado"></div>
+            <p class="mapa-subtitulo">
+                <strong data-key="mapa_lugar">Los Galguillos Centro de Turismo Rural</strong> 
+                <span data-key="mapa_p1_cont">goza de una ubicación privilegiada en Salamanca...</span>
+            </p>
+        </div>
+        <div class="map-container-estilizado">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.9463423714!2d-5.632!3d40.948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f266666666666%3A0x666666666666666!2sSanta%20Marta%20de%20Tormes%2C%20Salamanca!5e0!3m2!1ses!2ses!4v1642150000000!5m2!1ses!2ses" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-overlay-button">
+                <a href="https://maps.google.com" target="_blank" class="btn-ruta-moderno" data-key="mapa_btn">
+                    <i class="fas fa-directions"></i> CÓMO LLEGAR (MEJOR RUTA)
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reservas" class="section-padding">
+    <div class="container-reserva">
+        <h1 class="titulo-reserva" data-key="res_titulo">¡RESERVA TU ESTANCIA AHORA!</h1>
+        
+        <form id="form-completo" class="formulario-estilizado">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label data-key="res_nombre">NOMBRE *</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label data-key="res_caballos">CABALLOS</label>
+                    <input type="number" name="res_caballos" value="1" min="1">
+                </div>
+                <div class="form-group">
+                    <label data-key="res_email">CORREO ELECTRÓNICO *</label>
+                    <input type="email" name="user_email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label data-key="res_tel">TELÉFONO</label>
+                    <input type="tel" name="user_tel" placeholder="+34 612 34 56 78">
+                </div>
+            </div>
+
+            <div class="form-row full-width">
+                <label data-key="res_coment">COMENTARIOS</label>
+                <textarea name="res_coment" rows="4" placeholder="Cuéntanos cualquier detalle especial..."></textarea>
+            </div>
+
+            <div class="form-row full-width" style="margin-top: 30px;">
+                <label data-key="res_cal" style="text-align: center; display: block; font-weight: bold; margin-bottom: 15px;">
+                    SELECCIONA TUS FECHAS EN EL CALENDARIO:
+                </label>
+                <div class="calendario-diseno-airbnb">
+                    <input type="text" id="calendario-airbnb" name="periodo_total" readonly style="display:none;">
+                    <div id="calendar-inline"></div>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacidad" required>
+                    <label for="privacidad" data-key="res_priv">He leído y acepto la Política de privacidad *</label>
+                </div>
+                <button type="submit" class="btn-enviar-premium" id="btn-enviar" data-key="res_btn_enviar">
+                    ENVIAR SOLICITUD
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2 data-key="foo_h2">Finca Los Galguillos, tu alto en el camino</h2>
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/minambresfelixrodriguez" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@minambresfelixrodriguez" class="icon tiktok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3 data-key="foo_cont">Contacto</h3>
+            <p>📞 +34 608-54-84-82</p>
+            <p>📍 Santa Marta de Tormes, Salamanca</p>
+            <p>✉️ lamaluca@gmail.com</p>
+        </div>
+        <div class="footer-col">
+            <h3 data-key="foo_link">Enlaces</h3>
+            <ul>
+                <li><a href="#" data-key="foo_priv">Política de privacidad</a></li>
+                <li><a href="#" data-key="foo_aviso">Aviso legal</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

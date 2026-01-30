@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="nav_galeria">Galería | Centro ecuestre La Maluca</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="header-logo">
+            <img src="./img/logo.png" alt="Logo Finca" class="img-logo">
+            <span class="logo-text">La Maluca</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#inicio" data-key="nav_inicio">Inicio</a></li>
+                <li><a href="galeria.html" data-key="nav_galeria">Galería</a></li>
+                <li><a href="index.html#ubicacion" data-key="nav_contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <div class="current-lang">
+                <img src="https://flagcdn.com/w20/es.png" id="lang-img-actual" alt="Español">
+                <span id="lang-text-actual">ES</span>
+                <span class="arrow">▼</span>
+            </div>
+            <ul class="lang-dropdown">
+                <li onclick="cambiarIdioma('es')"><img src="https://flagcdn.com/w20/es.png"> Español</li>
+                <li onclick="cambiarIdioma('en')"><img src="https://flagcdn.com/w20/gb.png"> English</li>
+                <li onclick="cambiarIdioma('pt')"><img src="https://flagcdn.com/w20/pt.png"> Português</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="section-padding">
+    <div class="container">
+        <h1 class="titulo-reserva" data-key="gal_titulo" style="margin-top: 20px;">Galeria</h1>
+        <div class="galeria-grid-completa">
+        
+            <div class="galeria-item"><img src="./img/caballo2.jpg" alt="Foto 2"></div>
+            <div class="galeria-item"><img src="./img/caballo3.jpg" alt="Foto 3"></div>
+            <div class="galeria-item"><img src="./img/caballo4.jpg" alt="Foto 4"></div>
+            <div class="galeria-item"><img src="./img/caballo 5.png" alt="Foto 4"></div>
+            <div class="galeria-item"><img src="./img/c.png" alt="Foto 4"></div>
+            </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2 data-key="foo_h2">Finca Los Galguillos, tu alto en el camino</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/minambresfelixrodriguez" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@minambresfelixrodriguez" class="icon tiktok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
